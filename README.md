@@ -33,3 +33,10 @@ fi
 #fi
 #unset color_prompt force_color_prompt
 ```
+
+# ssh agent activation (for WSL)
+https://unix.stackexchange.com/questions/351725/why-eval-the-output-of-ssh-agent
+```
+eval $(ssh-agent)
+ssh-add <path_to_private_key>
+```
