@@ -40,3 +40,10 @@ https://unix.stackexchange.com/questions/351725/why-eval-the-output-of-ssh-agent
 eval $(ssh-agent)
 ssh-add <path_to_private_key>
 ```
+
+# change file encodnig
+```
+file -i <filename> # gives current file enconding
+iconv options -f <from-encoding> -t <to-encoding> inputfile(s) -o outpufile # convert file encoding
+iconv -l # list all supported encodings
+```
