@@ -1,5 +1,5 @@
 # Ubuntu bash cheatsheet
-General bash commands
+General bash commands & customization
 
 ## Mount a usb drive
 list all drives
