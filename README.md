@@ -52,7 +52,7 @@ fi
 #unset color_prompt force_color_prompt
 ```
 
-## ssh agent activation (for WSL)
+## ssh agent activation
 https://unix.stackexchange.com/questions/351725/why-eval-the-output-of-ssh-agent
 ```bash
 eval $(ssh-agent)
