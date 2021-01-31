@@ -16,19 +16,19 @@ fi
 for method in {1..100}
 do
     printf "${GREEN}"
-    date_str=`date +%H:%M:%S`
+    date_str=$(date +%H:%M:%S)
     printf "\r"
-    printf $date_str | tee -a $log_file
+    printf "%s" "$date_str" | tee -a $log_file
     sleep 1
     printf "${RED}"
-    date_str=`date +%H:%M:%S`
+    date_str=$(date +%H:%M:%S)
     printf "\r"
-    printf $date_str | tee -a $log_file
+    printf "%s" "$date_str" | tee -a $log_file
     sleep 1
     printf "${NC}"
-    date_str=`date +%H:%M:%S`
+    date_str=$(date +%H:%M:%S)
     printf "\r"
-    printf $date_str | tee -a $log_file
+    printf "%s" "$date_str" | tee -a $log_file
     sleep 1
 done
 
