@@ -21,8 +21,9 @@ sr0     11:0    1  1024M  0 rom
 then you can mount it using:
 ```bash
 mount -t ntfs /dev/sdb1 /media/usb_drive
-
-#then to unmount
+```
+then to unmount
+```bash
 umount /media/usb_drive
 ```
 
