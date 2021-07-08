@@ -31,7 +31,7 @@ umount /media/usb_drive
 ```bash
 sudo dd bs=4M if=path-to-the-ISO of=/dev/sdX status=progress && sync
 ```
-see [https://averagelinuxuser.com/make-a-bootable-usb-drive-in-linux/][https://averagelinuxuser.com/make-a-bootable-usb-drive-in-linux/]
+see [https://averagelinuxuser.com/make-a-bootable-usb-drive-in-linux/](https://averagelinuxuser.com/make-a-bootable-usb-drive-in-linux/)
 dd is the program name.
 
 bs=4M means to use a block size of 4M, so the system will read and write the data in chunks of 4M. This option is simply meant to speed up the process.
