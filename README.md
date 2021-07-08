@@ -27,6 +27,27 @@ then to unmount
 umount /media/usb_drive
 ```
 
+## Create a bootable drive using dd
+```bash
+sudo dd bs=4M if=path-to-the-ISO of=/dev/sdX status=progress && sync
+```
+see [https://averagelinuxuser.com/make-a-bootable-usb-drive-in-linux/][https://averagelinuxuser.com/make-a-bootable-usb-drive-in-linux/]
+dd is the program name.
+
+bs=4M means to use a block size of 4M, so the system will read and write the data in chunks of 4M. This option is simply meant to speed up the process.
+
+if specifies the source to read. Simply put, this is an ISO file of the Linux image you download from the Linux distribution website.
+
+path-to-the-ISO - path to the ISO file. For example, ~/Downloads/archlinux.iso
+
+of specified the destination or where to write this ISO file. In other words, it is your USB drive. This is the most important part of the command, If you do mistake here, you can screw up your whole system. So, be very-very careful.
+
+/dev/sdX means the name assigned to a device by your Linux system. It is some kind of analogy of disks C, D, E in Windows systems.
+
+status=progress is not necessary. However, it is helpful because it will show you the progress during the writing process. Without this option, nothing will be printed on the terminal screen.
+
+sync is actually another command, not an option. Sync clears the cache. Thanks to the && signs it will be executed as a chain with dd. This will make sure that all the data is written to the flash drive and nothing is left in the cache.
+
 ## Git
 Ubuntu: in order to show the branch name in the prompt add the following in ~/.bashrc
 ```bash
