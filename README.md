@@ -31,6 +31,11 @@ umount /media/usb_drive
 ```bash
 sudo dd bs=4M if=path-to-the-ISO of=/dev/sdX status=progress && sync
 ```
+
+#### Windows
+see [https://www.linuxbabe.com/ubuntu/easily-create-windows-10-bootable-usb-ubuntu](https://www.linuxbabe.com/ubuntu/easily-create-windows-10-bootable-usb-ubuntu)
+
+#### Ubuntu
 see [https://averagelinuxuser.com/make-a-bootable-usb-drive-in-linux/](https://averagelinuxuser.com/make-a-bootable-usb-drive-in-linux/)
 dd is the program name.
 
