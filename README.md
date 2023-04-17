@@ -95,3 +95,5 @@ file -i <filename> # gives current file encoding
 iconv options -f <from-encoding> -t <to-encoding> inputfile(s) -o outpufile # convert file encoding
 iconv -l # list all supported encodings
 ```
+
+## Activate WSL autocomplete
